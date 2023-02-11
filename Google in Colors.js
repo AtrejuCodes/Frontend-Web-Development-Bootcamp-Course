@@ -1,4 +1,4 @@
-//used in devtools - console. Google Home
+//used in devtools - console. Google Home. A Random color at user clicks
 
 const htmlBody = document.querySelector('body');
 //htmlBody = Google home body
