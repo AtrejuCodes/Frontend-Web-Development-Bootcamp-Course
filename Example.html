@@ -1,11 +1,35 @@
 <html>
 
   <head>
-    <title>Example Page </title>
+    <title>Example Page</title>
+    <style>
+        button {
+          background-color: transparent;
+          border: 1px solid navy;
+          padding: 20px;
+          font-size: 1.4rem;
+        }
+        button:hover {
+          background-color: navy;
+          border: none;
+          color: white;
+        }
+    </style>
   </head>
 
   <body>
-    <button>CLICK ME </button>
+    <button>CLICK ME</button>
+    <div class="container"></div>
+      <script>
+          function onClickEvent () {
+            const el = document.createElement('p');
+            el.innerText = 'clicked the button';
+            document.querySelector('.container').appendChild(el);
+          }
+          document.querySelector('button').onclick = onClickEvent;
+
+      </script>
+
   </body>
 
 </html>
